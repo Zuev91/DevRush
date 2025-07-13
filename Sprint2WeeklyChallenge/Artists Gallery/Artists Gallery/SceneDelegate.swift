@@ -19,7 +19,19 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: windowScene)
         self.window = window
-        self.window?.makeKeyAndVisible()
+        let mainVC = ViewController()
+        let secondVC = SecondViewController()
+        let thirdVC = ThirdViewController()
+        let fourthVC = FourthViewController()
+        
+        let navigation = UINavigationController(rootViewController: mainVC)
+//        navigation.pushViewController(secondVC, animated: false)
+//        navigation.pushViewController(thirdVC, animated: false)
+//        navigation.pushViewController(fourthVC, animated: false)
+        
+        
+        window.rootViewController = navigation
+        window.makeKeyAndVisible()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
