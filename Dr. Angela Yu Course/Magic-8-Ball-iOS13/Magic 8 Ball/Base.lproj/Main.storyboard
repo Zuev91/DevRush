@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Magic_8_Ball" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ask Me Anything" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rzK-kW-kl7">
+                                <rect key="frame" x="10" y="95" width="373" height="83"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="83" id="V1l-Xf-2Sx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="30"/>
+                                <color key="textColor" red="0.86093777419999995" green="0.8321887752217344" blue="0.18261830151793348" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Kkf-oL-nPg">
+                                <rect key="frame" x="76" y="271" width="240" height="248"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4vo-z2-2H1">
+                                <rect key="frame" x="123" y="596" width="146" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="146" id="Auy-nR-rot"/>
+                                    <constraint firstAttribute="height" constant="90" id="FmI-Ho-Ksd"/>
+                                </constraints>
+                                <color key="tintColor" red="0.86093777419999995" green="0.83218877520000001" blue="0.1826183015" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" cornerStyle="capsule">
+                                    <backgroundConfiguration key="background" strokeWidth="3" strokeOutset="0.0">
+                                        <color key="strokeColor" red="0.55686277149999996" green="0.1607843041" blue="0.14509806040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Ask">
+                                            <attributes>
+                                                <font key="NSFont" size="30" name="Chalkduster"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="askButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c8G-hE-zTA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.08714970201253891" green="0.39532774686813354" blue="0.18937471508979797" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Kkf-oL-nPg" firstAttribute="centerX" secondItem="4vo-z2-2H1" secondAttribute="centerX" id="6ad-0D-Qiw"/>
+                            <constraint firstItem="Kkf-oL-nPg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="9vD-NL-GnV"/>
+                            <constraint firstItem="rzK-kW-kl7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="95" id="CSu-Yl-k4s"/>
+                            <constraint firstItem="4vo-z2-2H1" firstAttribute="top" secondItem="Kkf-oL-nPg" secondAttribute="bottom" constant="77" id="Dtv-bS-heB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rzK-kW-kl7" secondAttribute="trailing" constant="10" id="RSr-ce-4CC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Kkf-oL-nPg" secondAttribute="trailing" constant="77" id="hfy-gT-bhS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4vo-z2-2H1" secondAttribute="bottom" constant="98" id="k60-B4-DoB"/>
+                            <constraint firstItem="rzK-kW-kl7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="oJZ-ao-3mx"/>
+                            <constraint firstItem="Kkf-oL-nPg" firstAttribute="top" secondItem="rzK-kW-kl7" secondAttribute="bottom" constant="93" id="ynn-FJ-KB6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="Kkf-oL-nPg" id="DYk-YJ-TDM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135.1145038167939" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+</document>
